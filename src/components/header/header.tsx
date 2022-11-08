@@ -5,7 +5,7 @@ import Logo from "../../assets/images/Logo.png";
 const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 46px 230px 102px 118px;
+  padding: 20px 150px 40px 75px;
 
   .category1 {
     display: flex;
@@ -19,10 +19,10 @@ const HeaderContainer = styled.div`
     align-items: center;
   }
 
-  p {
+  .no {
     font-family: "Inter";
     font-weight: 400;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 31px;
     color: #fff;
   }
@@ -31,7 +31,7 @@ const HeaderContainer = styled.div`
     color: #ffffff;
     font-family: "Rufina";
     font-weight: 700;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 48px;
     border: 2px solid #fff;
     align-self: flex-start;
@@ -115,7 +115,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <div className="category1">
-        <Image src={Logo} alt="logo" />
+        <Image src={Logo} alt="logo" width={180} />
         <div className="hamburger-container">
           <input
             type="checkbox"
@@ -133,7 +133,7 @@ const Header = () => {
         </div>
       </div>
       <div className="category2">
-        <p>+86 852 346 000</p>
+        <p className="no">+86 852 346 000</p>
         <div className="reservedbtn">Reservations</div>
       </div>
     </HeaderContainer>
